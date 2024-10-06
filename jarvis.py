@@ -98,71 +98,19 @@ if __name__ == "__main__":
         elif 'open vtop vit bhopal' in query:
             webbrowser.open("https://vtop.vitbhopal.ac.in/vtop/initialProcess")
         
+
+        # Accessing local files by using voice command
         elif 'play music' in query:
-            music_dir = 'F:\\Music'
+            music_dir = 'D:\\Songs'
             songs = os.listdir(music_dir)
             print(songs)    
             os.startfile(os.path.join(music_dir, songs[0]))
 
-        # elif 'play black widow' in query:
-        #     black_widow_dir = 'F:\\BLACK WIDOW'
-        #     black_widow = os.listdir(black_widow_dir)
-        #     print(black_widow)
-        #     os.startfile(os.path.join(black_widow_dir, black_widow[0]))
-
-        # elif 'play lucifer season 1' in query:
-        #     lucifer_season_one_dir = 'F:\\LUCIFER\\S1'
-        #     lucifer_season_one = os.listdir(lucifer_season_one_dir)
-        #     print(lucifer_season_one)
-        #     os.startfile(os.path.join(lucifer_season_one_dir, lucifer_season_one[0]))
-
-        # elif 'play lucifer season 2' in query:
-        #     lucifer_season_two_dir = 'F:\\LUCIFER\\S2'
-        #     lucifer_season_two = os.listdir(lucifer_season_two_dir)
-        #     print(lucifer_season_two)
-        #     os.startfile(os.path.join(lucifer_season_two_dir, lucifer_season_two[0]))
-
-        # elif 'play lucifer season 3' in query:
-        #     lucifer_season_three_dir = 'F:\\LUCIFER\\S3'
-        #     lucifer_season_three = os.listdir(lucifer_season_three_dir)
-        #     print(lucifer_season_three)
-        #     os.startfile(os.path.join(lucifer_season_three_dir, lucifer_season_three[0]))
-
-        # elif 'play lucifer season 4' in query:
-        #     lucifer_season_four_dir = 'F:\\LUCIFER\\S4'
-        #     lucifer_season_four = os.listdir(lucifer_season_four_dir)
-        #     print(lucifer_season_four)
-        #     os.startfile(os.path.join(lucifer_season_four_dir, lucifer_season_four[0]))
-
-        # elif 'play lucifer season 5' in query:
-        #     lucifer_season_five_dir = 'F:\\LUCIFER\\S5'
-        #     lucifer_season_five = os.listdir(lucifer_season_five_dir)
-        #     print(lucifer_season_five)
-        #     os.startfile(os.path.join(lucifer_season_five_dir, lucifer_season_five[0]))
-
-        # elif 'play interstellar' in query:
-        #     interstellar_dir = 'F:\\Interstellar'
-        #     interstellar = os.listdir(interstellar_dir)
-        #     print(interstellar)
-        #     os.startfile(os.path.join(interstellar_dir, interstellar[0]))
-
-        # elif 'play squid games season 1' in query:
-        #     squid_games_season_one_dir = 'F:\\Squid Games\\S1'
-        #     squid_games_season_one = os.listdir(squid_games_season_one_dir)
-        #     print(squid_games_season_one)
-        #     os.startfile(os.path.join(squid_games_season_one_dir, squid_games_season_one[0]))
-
-        # elif 'play lost in space season 1' in query:
-        #     lost_in_space_season_one_dir = 'F:\\LOST IN SPACE\\S1'
-        #     lost_in_space_season_one = os.listdir(lost_in_space_season_one_dir)
-        #     print(lost_in_space_season_one)
-        #     os.startfile(os.path.join(lost_in_space_season_one_dir, lost_in_space_season_one[0]))
-
-        # elif 'play lost in space season 2' in query:
-        #     lost_in_space_season_two_dir = 'F:\\LOST IN SPACE\\S2'
-        #     lost_in_space_season_two = os.listdir(lost_in_space_season_two_dir)
-        #     print(lost_in_space_season_two)
-        #     os.startfile(os.path.join(lost_in_space_season_two_dir,lost_in_space_season_two[0]))
+        elif 'play taaja khabar season two episode 1' in query:
+            taaja_khabar_season_two_dir = 'D:\\Movie\\Taza_Khabar\\[AllMoviesHub.codes]-taaja.Khabar.S02E01.Hisaab.1080p.WEB-DL.Hindi.DDP5.1.Atmos.H.264.mkv'
+            taaja_khabar_season_two = os.listdir(taaja_khabar_season_two_dir)
+            print(taaja_khabar_season_two)
+            os.startfile(os.path.join(taaja_khabar_season_two_dir,taaja_khabar_season_two[0]))
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
